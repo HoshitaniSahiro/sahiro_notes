@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2020-11-28T14:48:18&#43;08:00</updated>
+    <updated>2020-11-28T15:07:43&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -226,7 +226,7 @@ s.keep_alive =False
             <title type="text">Hugo手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/hugo/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/hugo/</id>
-            <updated>2020-11-28T14:15:05&#43;08:00</updated>
+            <updated>2020-11-28T14:48:48&#43;08:00</updated>
             <published>2020-11-25T15:46:36&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -369,7 +369,7 @@ watch:                      true
             <title type="text">Git手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/git/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/git/</id>
-            <updated>2020-11-28T14:15:05&#43;08:00</updated>
+            <updated>2020-11-28T15:04:48&#43;08:00</updated>
             <published>2020-11-25T15:39:51&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -383,13 +383,23 @@ watch:                      true
 &lt;h3 id=&#34;从github得到仓库&#34;&gt;从Github得到仓库&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;git clone git@github.com:HoshitaniSahiro/sahiro_notes.git
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;强迫症患者注意，此操作会在路径中新建一整个文件夹！&lt;/p&gt;
-&lt;h3 id=&#34;在本地建立仓库并push到github&#34;&gt;在本地建立仓库并push到Github&lt;/h3&gt;
+&lt;h3 id=&#34;查看远程仓库地址&#34;&gt;查看远程仓库地址&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git remote -v
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;在本地建立仓库并push到github&#34;&gt;在本地建立仓库并push到Github&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;git init
 git remote add origin https://github.com/HoshitaniSahiro/sahiro_notes.git
 git add -A
-git commit -m &amp;quot;This is An Update&amp;quot;
+git commit -m &amp;quot;Regular Update&amp;quot;
 git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;p&gt;或是有其他协作者提交了代码，或是你之前在远程上直接做了处理。这部分有两个处理方法，一是直接强覆盖，二是先把远程的变化拉取下来，解决冲突后，再一并提交。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 强覆盖
+git push -f origin master
+# 拉取再提交
+git pull –-rebase origin maste
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;--rebase在合并代码的时候其作用就是在一个随机创建的分支上处理冲突，避免了直接污染原来的分区。&lt;/p&gt;
+</content>
             
             
             
