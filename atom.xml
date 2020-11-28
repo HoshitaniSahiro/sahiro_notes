@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">纱寻·手记</title>
+    <subtitle type="html">纱寻在这里写些东西～。</subtitle>
+    <updated>2020-11-28T14:48:18&#43;08:00</updated>
+    <id>http://www.boa-sahiro.one/sahiro_notes/</id>
+    <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
+    <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
+    <author>
+            <name>Sahiro</name>
+            <uri>http://www.boa-sahiro.one/</uri>
+            
+                <email>wu_yuxuan201@outlook.com</email>
+            </author>
+    
+    <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
+        <entry>
+            <title type="text">Linux命令行手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/linux/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/linux/</id>
+            <updated>2020-11-28T14:46:55&#43;08:00</updated>
+            <published>2020-11-28T14:28:47&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">尽管一开始觉得很可怕，纱寻寻还是很快意识……</summary>
+            
+                <content type="html">&lt;p&gt;尽管一开始觉得很可怕，纱寻寻还是很快意识到想完全不接触Linux是不可能的。而且Linux和我们熟悉的操作系统之间的差别并非不可逾越的鸿沟，比如同为Unix-like系统，MacOS终端命令绝大多数和Linux通用；连Windows的cmd和Powershell大多数常用命令也和Linux一样。随着Windows近期更新对Linux和命令行的支持越来越好，咱也要尽可能习惯用命令行完成更多事情，尤其是图形界面做起来很不顺手的事情。不过话说回来为什么Windows 10 20H1还不给我推送...&lt;/p&gt;
+&lt;h3 id=&#34;基础文件操作&#34;&gt;基础文件操作&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;ls
+cd
+mkdir xxx
+mv [x] [y]  # 改名
+rmdir xxx   # 删除，仅限空文件夹
+rm xxx  # 删除文件
+rm -i xxx   # 删除前逐一询问确认。
+rm -f xxx   # 即使原档案属性设为唯读，亦直接删除，无需逐一确认
+rm -r xxx   # 删除文件夹
+rm -r * # 清空当前目录
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。&lt;/p&gt;
+&lt;h3 id=&#34;进程&#34;&gt;进程&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;ps a    # 显示现行终端机下的所有程序，包括其他用户的程序。
+ps -A   # 显示所有程序。
+sudo kill xxx # 结束进程
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+&lt;p&gt;在VSCode Remote解决断连问题之前总还是有可能用到这玩意...&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;esc :wq # 保存退出
+:q  # 不保存退出
+:w  # 保存文件但不退出vim
+:w file # 将修改另外保存到file中，不退出vim
+:w! # 强制保存，不推出vim
+:wq # 保存文件并退出vim
+:wq!    # 强制保存文件，并退出vim
+:q  # 不保存文件，退出vim
+:q! # 不保存文件，强制退出vim
+:e! # 放弃所有修改，从上次保存文件开始再编辑命令历史
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;远程炼丹&#34;&gt;远程炼丹&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;curl ifconfig.me # 公网ip
+python -m visdom.server 开启pytorch visdom服务
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;远程文件传输&#34;&gt;远程文件传输&lt;/h3&gt;
+&lt;p&gt;从本地传输文件到服务器：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;scp [source address] user@ip:[target address]    # scp传单文件
+scp -r [source address] user@ip:[target address]    # scp传文件夹
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;从服务器传输文件到本地时交换上面两个地址即可，本地address是不用填ip的。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Latex手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/latex/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/latex/</id>
+            <updated>2020-11-28T14:28:23&#43;08:00</updated>
+            <published>2020-11-28T14:22:01&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">不知道别人怎么样，反正我是越来越嫌弃do……</summary>
+            
+                <content type="html">&lt;p&gt;不知道别人怎么样，反正我是越来越嫌弃docx格式的文档编辑了，大概人是越来越懒的吧。写轻量级文档主要用markdown了，论文就用latex。其中latex语法有一点多哈。&lt;/p&gt;
+&lt;h3 id=&#34;基本文字符号&#34;&gt;基本文字符号&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;\overline{} # 上横线
+\underline{}    #下横线
+\hat{}  # 小帽子
+\widehat{}  # 弯帽子
+\widetilde{}    # 波浪线
+\dot{}  # 上加点
+\ddot{} # 上两点
+_{} ^{} # 下标、上标
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;数学&#34;&gt;数学&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;\frac{}{}   # 分号 分子/分母
+\sum    # 求和
+\prod   # 连乘
+\in # 属于
+\not\in # 不属于
+\subset # 包含于
+\supset	# 包含
+\cap    # 交
+\cup	# 并
+\emptyset   # 空
+\mathbb{R}	# 实数集
+&lt;/code&gt;&lt;/pre&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Crawler手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/crawler/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/crawler/</id>
+            <updated>2020-11-28T14:15:05&#43;08:00</updated>
+            <published>2020-11-26T12:01:41&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">2020年11月为了给我司音乐生成曲库整……</summary>
+            
+                <content type="html">&lt;p&gt;2020年11月为了给我司音乐生成曲库整理打标签，第一次用到了爬虫。爬虫不是那种仅依赖本机就能顺利运行的程序，so还是踩了一些坑...&lt;/p&gt;
+&lt;h3 id=&#34;requests&#34;&gt;Requests&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import requests as rq
+
+res = rq.get(url)
+res.encoding = &#39;utf-8&#39;
+html = res.text
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;requests的主要用途是对url做访问，得到结果。为了中文支持要设定编码方式为utf-8.&lt;/p&gt;
+&lt;h3 id=&#34;beautiful-soup&#34;&gt;Beautiful Soup&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import bs4
+
+soup = bs4.BeautifulSoup(html, &#39;html.parser&#39;)
+suburls = []
+for i in soup.find_all(&#39;li&#39;):
+    suburls.append(url + i.a[&#39;href&#39;])
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;bs4（beautiful soup）的作用是对hmtl字段做分析。&lt;/p&gt;
+&lt;p&gt;soup.find_all(): 可以找到html当中特定标签的字段，返回包含所有此字段（PageElement对象）的列表。&lt;/p&gt;
+&lt;p&gt;i.a: 找到PageElement当中的a标签，这里可以用[&#39;href&#39;]索引出一个href属性，href一般是有效文档的相对或绝对url。&lt;/p&gt;
+&lt;h3 id=&#34;避免断连的方法&#34;&gt;避免断连的方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;s = rq.session()
+s.keep_alive =False
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;首先，不可以保持会话一直存在。但加上了这个还是不够，不能保证完全通畅运行。&lt;/p&gt;
+&lt;p&gt;接下来是很可爱的一些句子：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while True:
+    try:
+        res = rq.get(url)
+    except:
+        print(&amp;quot;Connection refused by the server..&amp;quot;)
+        print(&amp;quot;Let me sleep for a second&amp;quot;)
+        print(&amp;quot;ZZzzzz...&amp;quot;)
+        time.sleep(1)
+        print(&amp;quot;Was a nice sleep, now let me continue...&amp;quot;)
+        continue
+    else:
+        break
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;连接超时了就是一个Exception，那么只要保证Exception的时候程序不退出，而是睡一秒钟之后再接再厉就没有问题了。但是如果忘了else他就会一直睡睡睡的...&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Hugo手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/hugo/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/hugo/</id>
+            <updated>2020-11-28T14:15:05&#43;08:00</updated>
+            <published>2020-11-25T15:46:36&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">目前由于FrontEnd语言全都不会，只……</summary>
+            
+                <content type="html">&lt;p&gt;目前由于FrontEnd语言全都不会，只能用Hugo创建和管理网站。好用还是好用的，就是好看的主题太少了，绝大多数都如此直男...&lt;/p&gt;
+&lt;h3 id=&#34;下载hugo&#34;&gt;下载Hugo&lt;/h3&gt;
+&lt;p&gt;Mac下直接brew install hugo, Windows去官网下一个exe。但我还是爱Windows。&lt;/p&gt;
+&lt;h3 id=&#34;建立新项目&#34;&gt;建立新项目&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;hugo new site xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;xxx写入项目路径&lt;/p&gt;
+&lt;h3 id=&#34;导入主题&#34;&gt;导入主题&lt;/h3&gt;
+&lt;p&gt;用Meme举个例子，以前用来做个人学术Portfolio的叫forty。
+&lt;a href=&#34;https://github.com/reuixiy/hugo-theme-meme&#34;&gt;https://github.com/reuixiy/hugo-theme-meme&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd themes
+git clone https://github.com/reuixiy/hugo-theme-meme.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;每个主题config.toml规范都不一样，建议看作者写的文档不要自己乱来。&lt;/p&gt;
+&lt;h3 id=&#34;生成新文章&#34;&gt;生成新文章&lt;/h3&gt;
+&lt;p&gt;先进入新生成的项目path，然后：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new xxx.md
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;新markdown出现在./content下面&lt;/p&gt;
+&lt;h3 id=&#34;本地调试&#34;&gt;本地调试&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;hugo server --theme=hugo-theme-meme --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果不要buildDrafts，就不会build drafts&lt;/p&gt;
+&lt;h3 id=&#34;生成网站&#34;&gt;生成网站&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;hugo  --theme=hugo-theme-meme --baseUrl=&amp;quot;http://www.boa-sahiro.one/sahiro_notes&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果不加--baseUrl是永远不会成功的...&lt;/p&gt;
+&lt;h3 id=&#34;项目结构&#34;&gt;项目结构&lt;/h3&gt;
+&lt;h4 id=&#34;configtoml&#34;&gt;config.toml:&lt;/h4&gt;
+&lt;p&gt;Hugo 需要在源目录查找一个 config.toml 的配置文件。如果这个文件不存在，将会查找 config.yaml，然后是 config.json。这个配置文件是一个整站的配置。它给 Hugo 提供了如何构建站点的方式，比如全局的参数和菜单。&lt;/p&gt;
+&lt;p&gt;下面是 Hugo 定义好的变量列表，以及他们的默认值，你可以设置他们：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;archetypedir:               &amp;quot;archetype&amp;quot;
+# hostname (and path) to the root, e.g. http://spf13.com/
+baseURL:                    &amp;quot;&amp;quot;
+# include content marked as draft
+buildDrafts:                false
+# include content with publishdate in the future
+buildFuture:                false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs:               false
+canonifyURLs:               false
+# config file (default is path/config.yaml|json|toml)
+config:                     &amp;quot;config.toml&amp;quot;
+contentdir:                 &amp;quot;content&amp;quot;
+dataDir:                    &amp;quot;data&amp;quot;
+defaultExtension:           &amp;quot;html&amp;quot;
+defaultLayout:              &amp;quot;post&amp;quot;
+disableLiveReload:          false
+# Do not build RSS files
+disableRSS:                 false
+# Do not build Sitemap file
+disableSitemap:             false
+# edit new content with this editor, if provided
+editor:                     &amp;quot;&amp;quot;
+footnoteAnchorPrefix:       &amp;quot;&amp;quot;
+footnoteReturnLinkContents: &amp;quot;&amp;quot;
+# google analytics tracking id
+googleAnalytics:            &amp;quot;&amp;quot;
+languageCode:               &amp;quot;&amp;quot;
+layoutdir:                  &amp;quot;layouts&amp;quot;
+# Enable Logging
+log:                        false
+# Log File path (if set, logging enabled automatically)
+logFile:                    &amp;quot;&amp;quot;
+# &amp;quot;yaml&amp;quot;, &amp;quot;toml&amp;quot;, &amp;quot;json&amp;quot;
+metaDataFormat:             &amp;quot;toml&amp;quot;
+newContentEditor:           &amp;quot;&amp;quot;
+# Don&#39;t sync modification time of files
+noTimes:                    false
+paginate:                   10
+paginatePath:               &amp;quot;page&amp;quot;
+permalinks:
+# Pluralize titles in lists using inflect
+pluralizeListTitles:        true
+# Preserve special characters in taxonomy names (&amp;quot;Gérard Depardieu&amp;quot; vs &amp;quot;Gerard Depardieu&amp;quot;)
+preserveTaxonomyNames:      false
+# filesystem path to write files to
+publishdir:                 &amp;quot;public&amp;quot;
+# color-codes for highlighting derived from this style
+pygmentsStyle:              &amp;quot;monokai&amp;quot;
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses:         false
+# default sitemap configuration map
+sitemap:
+# filesystem path to read files relative from
+source:                     &amp;quot;&amp;quot;
+staticdir:                  &amp;quot;static&amp;quot;
+# display memory and timing of different steps of the program
+stepAnalysis:               false
+# theme to use (located in /doc/themes/THEMENAME/)
+theme:                      &amp;quot;&amp;quot;
+title:                      &amp;quot;&amp;quot;
+# if true, use /filename.html instead of /filename/
+uglyURLs:                   false
+# Do not make the url/path to lowercase
+disablePathToLower:         false
+# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+hasCJKLanguage              false
+# verbose output
+verbose:                    false
+# verbose logging
+verboseLog:                 false
+# watch filesystem for changes and recreate as needed
+watch:                      true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(摘自https://www.gohugo.org/doc/overview/configuration/)&lt;/p&gt;
+&lt;p&gt;其中canonifyurl = true时经常加载不出来图片，原因未知。&lt;/p&gt;
+&lt;h4 id=&#34;content&#34;&gt;content&lt;/h4&gt;
+&lt;p&gt;下面是真正咱写的文章，按每一个子文件夹分类，但是文件夹命名不同的主题有不同的规则，不得不说很傻...&lt;/p&gt;
+&lt;h4 id=&#34;layouts&#34;&gt;layouts&lt;/h4&gt;
+&lt;p&gt;layouts/static/custom.css可以自己修改主题。&lt;/p&gt;
+&lt;p&gt;layouts下面一堆html都可以修改...反正html也不是完全看不懂。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Git手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/git/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/git/</id>
+            <updated>2020-11-28T14:15:05&#43;08:00</updated>
+            <published>2020-11-25T15:39:51&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">代码该放Github的就放Github.……</summary>
+            
+                <content type="html">&lt;p&gt;代码该放Github的就放Github...不Public也没事，像你这么 &lt;del&gt;爱买买买漂亮电脑&lt;/del&gt;（不我买不起）的人难道想让代码轻易就丢掉吗？&lt;/p&gt;
+&lt;p&gt;目前只会用到Github，就只写Github相关的命令吧。&lt;/p&gt;
+&lt;h3 id=&#34;从github得到仓库&#34;&gt;从Github得到仓库&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:HoshitaniSahiro/sahiro_notes.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;强迫症患者注意，此操作会在路径中新建一整个文件夹！&lt;/p&gt;
+&lt;h3 id=&#34;在本地建立仓库并push到github&#34;&gt;在本地建立仓库并push到Github&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git init
+git remote add origin https://github.com/HoshitaniSahiro/sahiro_notes.git
+git add -A
+git commit -m &amp;quot;This is An Update&amp;quot;
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+</feed>
