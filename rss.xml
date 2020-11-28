@@ -21,7 +21,7 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Sat, 28 Nov 2020 15:07:43 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2020 15:21:36 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
@@ -244,7 +244,8 @@ s.keep_alive =False
 &lt;a href=&#34;https://github.com/reuixiy/hugo-theme-meme&#34;&gt;https://github.com/reuixiy/hugo-theme-meme&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;cd themes
 git clone https://github.com/reuixiy/hugo-theme-meme.git
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;每个主题config.toml规范都不一样，建议看作者写的文档不要自己乱来。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;每个主题config.toml规范都不一样，建议看作者写的文档不要自己乱来。
+git clone的方式得到主题的问题在于，hugo项目本身的git会把主题当作一个嵌套仓库，这样更新项目源码的时候如果直接push，theme里的仓库是push不上去的（远程仓库会得到一个空文件夹）。如果不想用submodule解决这个问题的话也可以直接下载zip解压来着，不麻烦。&lt;/p&gt;
 &lt;h3 id=&#34;生成新文章&#34;&gt;生成新文章&lt;/h3&gt;
 &lt;p&gt;先进入新生成的项目path，然后：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hugo new xxx.md
