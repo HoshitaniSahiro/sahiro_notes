@@ -21,10 +21,123 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Sat, 28 Nov 2020 15:21:36 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 29 Nov 2020 01:36:23 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
+        
+            <item>
+                <title>Python文字处理手记</title>
+                <link>http://www.boa-sahiro.one/sahiro_notes/post/pytext/</link>
+                <guid isPermaLink="true">http://www.boa-sahiro.one/sahiro_notes/post/pytext/</guid>
+                <pubDate>Sat, 28 Nov 2020 23:05:23 &#43;0800</pubDate>
+                
+                    <author>wu_yuxuan201@outlook.com (Sahiro)</author>
+                
+                
+                
+                    <description>&lt;p&gt;面向中文的文字处理，常用的代码都差不多。&lt;/p&gt;
+&lt;h3 id=&#34;判断是否为中国汉字&#34;&gt;判断是否为中国汉字&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;def ischinese(uchar):
+    if uchar &amp;gt;= u&#39;\u4e00&#39; and uchar &amp;lt;= u&#39;\u9fa5&#39;:
+        return True
+    else:
+        return False
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;读取文本文档&#34;&gt;读取文本文档&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;with open(txtpath, &#39;r&#39;, encoding=&#39;utf-8&#39;) as f:
+    str_list = f.readlines()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;写入文本文档&#34;&gt;写入文本文档&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;with open(txtpath, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+    f.write(str_list)
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://www.boa-sahiro.one/sahiro_notes/post/">post\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>MuseScore手记</title>
+                <link>http://www.boa-sahiro.one/sahiro_notes/post/musescore/</link>
+                <guid isPermaLink="true">http://www.boa-sahiro.one/sahiro_notes/post/musescore/</guid>
+                <pubDate>Sat, 28 Nov 2020 20:41:23 &#43;0800</pubDate>
+                
+                    <author>wu_yuxuan201@outlook.com (Sahiro)</author>
+                
+                
+                
+                    <description>&lt;p&gt;为什么会有这么一篇......不可说，不可说。&lt;br&gt;
+全是快捷键哈。Win的。Mac把Ctrl换成Command一般就可以哈。&lt;/p&gt;
+&lt;h3 id=&#34;导航&#34;&gt;导航&lt;/h3&gt;
+&lt;p&gt;Alt+Down: 下方音符&lt;br&gt;
+Alt+Up: 上方音符&lt;br&gt;
+Ctrl+Right: 下一小节
+Ctrl+Left: 上一小节&lt;/p&gt;
+&lt;h3 id=&#34;音符输入编辑&#34;&gt;音符输入/编辑&lt;/h3&gt;
+&lt;p&gt;N: 打开音符输入&lt;br&gt;
+[A-G]: 输入音名&lt;br&gt;
+R: 重复前一音符&lt;br&gt;
+0: 输入休止符
+Shift+[A-G]: 在蓝色的刚输入的音符基础上输入其他和弦音&lt;br&gt;
+Up: 将蓝色的刚输入的音符上移半音&lt;br&gt;
+Down: 将蓝色的刚输入的音符下移半音&lt;br&gt;
+Ctrl+Up: 将蓝色的刚输入的音符上移八度&lt;br&gt;
+Ctrl+Down: 将蓝色的刚输入的音符下移八度&lt;br&gt;
+W: 将蓝色的刚输入的音符节拍延长一半&lt;br&gt;
+Q: 将蓝色的刚输入的音符节拍缩短一半&lt;br&gt;
+Shift+W: 将蓝色的刚输入的音符延长一个附点&lt;br&gt;
+Shift+Q: 将蓝色的刚输入的音符缩短一个附点&lt;br&gt;
+Number 1-6: 直接设定待输入音符的节拍&lt;/p&gt;
+&lt;h3 id=&#34;装饰输入&#34;&gt;装饰输入&lt;/h3&gt;
+&lt;p&gt;+: 连音线&lt;br&gt;
+S: 连句线&lt;br&gt;
+Shift+.: 断奏&lt;br&gt;
+H: 渐强&lt;br&gt;
+Shift+H: 减弱&lt;/p&gt;
+&lt;h3 id=&#34;歌词输入&#34;&gt;歌词输入&lt;/h3&gt;
+&lt;p&gt;L: 进入歌词&lt;br&gt;
+Ctrl+Left: 左移音节&lt;br&gt;
+Ctrl+Right：右移音节&lt;/p&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://www.boa-sahiro.one/sahiro_notes/post/">post\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Linux命令行手记</title>
