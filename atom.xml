@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2020-12-14T00:46:49&#43;08:00</updated>
+    <updated>2020-12-21T01:26:26&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -17,10 +17,67 @@
     
     <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
         <entry>
+            <title type="text">Python绘图手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pyplot/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/pyplot/</id>
+            <updated>2020-12-21T01:26:11&#43;08:00</updated>
+            <published>2020-12-21T01:07:48&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">非常非常讨厌的、也用了很多很多次的Mat……</summary>
+            
+                <content type="html">&lt;p&gt;非常非常讨厌的、也用了很多很多次的Matplotlib......然鹅你我别无选择。&lt;/p&gt;
+&lt;h4 id=&#34;matplotlib-绘图基本方法&#34;&gt;Matplotlib 绘图基本方法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;from matplotlib.figure import Figure
+
+figure = Figure(figsize=(width, height)) # 创建Figure对象
+figure.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0.1, wspace=0.1) # 去掉大边框
+figure1 = self.figure.add_subplot(111) # 创建子图，&amp;quot;111&amp;quot;代表一共有一行一列，当前的是第一个
+figure1.axis(&amp;quot;off&amp;quot;) # 去掉坐标轴
+figure1.plot(x, y, color=&#39;indigo&#39;) # 可以填入好看的颜色耶
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;matplotlib-颜色字典&#34;&gt;Matplotlib 颜色字典&lt;/h4&gt;
+&lt;p&gt;&lt;image
+src=&#34;../../images/matplotlibColors.png&#34;&gt;
+&lt;/image&gt;&lt;/p&gt;
+&lt;h4 id=&#34;matplotlib-嵌入-pyqt5&#34;&gt;Matplotlib 嵌入 PyQt5&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
+
+self.figure = Figure(figsize=(width, height))
+self.figure1 = self.figure.add_subplot(111)
+self.figureCanvas = FigureCanvasQTAgg(self.figure) # FigureCanvasQTAgg对象，本身就是一个QtWidget，同时可以用一个Figure对象初始化
+self.figureCanvas.setParent(self.figureCanvasWidget) # 可以把FigureCanvasQTAgg对象再放到一个QtWidget当中
+&lt;/code&gt;&lt;/pre&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">WitchSpring4!</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20201213/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/20201213/</id>
-            <updated>2020-12-14T00:44:39&#43;08:00</updated>
+            <updated>2020-12-14T00:51:05&#43;08:00</updated>
             <published>2020-12-13T22:16:26&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -29,7 +86,7 @@
                     </author>
             <summary type="html">春巫4实在太太太太太好玩了叭！！！肝了一……</summary>
             
-                <content type="html">&lt;p&gt;春巫4实在太太太太太好玩了叭！！！肝了一个周末之后好不容易磨死了蓝莓，以为终于要看大结局了，结果......第四章又开始了。虽然据说第四章第五章都很短，不过，要的就是这钟惊喜感嘛。希望以后的剧情可以做得更长一点，毕竟好不容易有能让我轻易陷入其中，无法拉回现实的游戏，多沉溺一下虚拟时空也是挺不错的嘛。&lt;/p&gt;
+                <content type="html">&lt;p&gt;春巫4实在太太太太太好玩了叭！！！肝了一个周末之后好不容易磨死了派莓（我还是习惯叫她蓝莓），以为终于要看大结局了，结果......第四章又开始了。虽然据说第四章第五章都很短，不过，要的就是这种惊喜感嘛。希望以后的剧情可以做得更长一点，毕竟好不容易有能让我轻易陷入其中，无法拉回现实的游戏，多沉溺一下虚拟时空也是挺不错的嘛。&lt;/p&gt;
 &lt;p&gt;&lt;image
 src=&#34;../../images/20201213.jfif&#34;&gt;
 &lt;/image&gt;&lt;/p&gt;
@@ -63,7 +120,7 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
             <title type="text">Python桌面应用手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pygui/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pygui/</id>
-            <updated>2020-12-13T22:15:53&#43;08:00</updated>
+            <updated>2020-12-21T01:25:52&#43;08:00</updated>
             <published>2020-12-13T21:42:18&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -72,13 +129,24 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
                     </author>
             <summary type="html">Tkinter因为它的丑陋和不方便，即将……</summary>
             
-                <content type="html">&lt;p&gt;Tkinter因为它的丑陋和不方便，即将慢慢被喵星人所摒弃，取而代之的将是更厉害的Qt。 
-也不是没有考虑过在C++上写Qt呢，但还是省事点好吧，人生苦短，我用......搭配上PyInstaller，综合来看差距不会太大的。 
+                <content type="html">&lt;p&gt;Tkinter因为它的丑陋和不方便，即将慢慢被喵星人所摒弃，取而代之的将是更厉害的Qt。&lt;br&gt;
+也不是没有考虑过在C++上写Qt呢，但还是省事点好吧，人生苦短，我用......搭配上PyInstaller，综合来看差距不会太大的。&lt;br&gt;
 不过这里PyInstaller就不能乱用了，尽量在一个纯净的环境下做打包，而且要做好代码重构（这导致我非常讨厌import一切），否则打包出来可以比一般的游戏都大...&lt;/p&gt;
 &lt;h4 id=&#34;pyqt开发&#34;&gt;PyQt开发&lt;/h4&gt;
-&lt;p&gt;使用并不是很大的软件Qt Designer就可以解决问题。设计时点击Form -&amp;gt; Preview可以查看效果。设计完之后保存为.ui文件，然后生成python代码：&lt;/p&gt;
+&lt;p&gt;使用并不是很大的软件Qt Designer就可以解决问题。设计时点击Form -&amp;gt; Preview或者Windows下Ctrl+R可以查看效果。设计完之后保存为.ui文件，然后命令行生成python代码：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pyuic5 -o xxx.py yyy.ui
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就是，链接一些自己的函数什么的，想想就心累。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接下来就是，链接一些自己的函数什么的，想想就心累。&lt;br&gt;
+使用Qt的时候因为界面代码格外丰富，应该尤其注意把界面代码和业务逻辑代码的&lt;em&gt;耦合程度&lt;/em&gt;&lt;strong&gt;降到最低&lt;/strong&gt;。&lt;br&gt;
+业务逻辑代码当中主要的类继承了pyuic5生成的界面窗口的类，所有的信号链接（也属于业务逻辑部分）在这里实现：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from PyQt5 import QtCore
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+class LogicSystem(QMainWindow, Ui_MainWindow): 
+    def __init__(self, parent=None):
+        super(SpeechSystem, self).__init__(parent)
+        self.setupUi(self)
+        self.pushButton.clicked.connect(self.callTTS)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里注意到Qt的一个特点：当任意一个控件发生内容上的更改时，要记得调用一次其show()方法方能生效。&lt;/p&gt;
 &lt;h4 id=&#34;conda虚拟环境管理&#34;&gt;conda虚拟环境管理&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;conda create --name [envname] [python=3.x] # 可以指定环境名称和python版本
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当然这一步是很慢的，如果新机器没有配置过，可以先配置一下清华源再创建环境：&lt;/p&gt;
