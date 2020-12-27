@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2020-12-21T01:26:26&#43;08:00</updated>
+    <updated>2020-12-28T02:51:08&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -17,10 +17,51 @@
     
     <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
         <entry>
+            <title type="text">行路难</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20201228/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/20201228/</id>
+            <updated>2020-12-28T02:50:46&#43;08:00</updated>
+            <published>2020-12-28T02:19:23&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">我现在没有李白那样的诗兴，吟不出长风破浪……</summary>
+            
+                <content type="html">&lt;p&gt;我现在没有李白那样的诗兴，吟不出长风破浪会有时的壮词，行路难三个字足矣。像是走难于上青天的蜀山栈道，继续走下去不一定有纵身一跃来得轻松，此之谓怀疑人生。&lt;/p&gt;
+&lt;p&gt;在某些方面，目前算是陷入了死局。回到家的这几天，惊喜算是给到了，但更多的却是疲累。当做出的改变越多，和过去的自己之间的gap就越大，而父母心中眼中的那个孩子，是不曾有这般改变的。满脑子孩子哭了笑了，一直都是差不多的模样。尤其当我的改变不顺遂他们的意思，他们认知中的那个我就更加停留在了出柜之前的那个时刻。我只得不断扮演过去的自己，来换取更少的抗拒。换上了男装、板着中学时代习惯的臭脸，操回木质的汉普，我说话的声音都不再像平常。我第一次动了过年不要回家的想法，但也仅仅是想法而已。责任这个东西不可以用常规的方式逃脱，否则它会用更加剧烈的方式在某一天找上门。况且我不是真的木质的心，我看得见空中撒的盐，落在从未愈合的伤口上；我听得见一方的呼喊和另一方的沉默。家难道本该是这样的吗？如果已经回不去，至少也不要变得更糟了。可是连我都很难改变，我演自己的方式只有拙劣得用力，更不用说是他们。我们永远不知道该如何好好说话。&lt;/p&gt;
+&lt;p&gt;在另些方面，歧路众多，而今安在？海选和抢选居然都能错过？真不知道每天都在忙些什么！仔细想想，我干着正式员工80%的活，拿着50%不到的工资，毕设和申请的事情却从未结束，无可避免地顾此失彼。如果同样的状态继续贯穿研究生网课的几年，真不知是福是祸是亏是盈。的的确确，实习没有最开始那几个月那么快乐了。现在天气又这么冷，有些时候，只剩下对贫穷的恐惧和对万老师的感激在支撑着我每天走去上班。其实早点走入社会也不是坏事吧？早点降低期望值，就能早点收获平稳而实在的快乐，心甘情愿地舍弃所谓的远方，囿于房产、户口和车牌。远方嘛，本来就是个虚无缥缈的东西，去了也是要回来的，正如很多事之间的差别，想跨也是跨不过去的。如此而已，不如躺平。&lt;/p&gt;
+&lt;p&gt;就这样吧，希望每天都可以睡个好觉。毕竟如果没有足够的力气，也许一不留神就会摔下去。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Python绘图手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pyplot/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pyplot/</id>
-            <updated>2020-12-21T01:26:11&#43;08:00</updated>
+            <updated>2020-12-21T02:14:01&#43;08:00</updated>
             <published>2020-12-21T01:07:48&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -49,6 +90,8 @@ self.figure = Figure(figsize=(width, height))
 self.figure1 = self.figure.add_subplot(111)
 self.figureCanvas = FigureCanvasQTAgg(self.figure) # FigureCanvasQTAgg对象，本身就是一个QtWidget，同时可以用一个Figure对象初始化
 self.figureCanvas.setParent(self.figureCanvasWidget) # 可以把FigureCanvasQTAgg对象再放到一个QtWidget当中
+self.figure1.plot(x, y, color=&#39;indigo&#39;)
+self.figureCanvas.draw() # 最后记得更新...
 &lt;/code&gt;&lt;/pre&gt;</content>
             
             
@@ -120,7 +163,7 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
             <title type="text">Python桌面应用手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pygui/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pygui/</id>
-            <updated>2020-12-21T01:25:52&#43;08:00</updated>
+            <updated>2020-12-28T02:17:04&#43;08:00</updated>
             <published>2020-12-13T21:42:18&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -146,7 +189,7 @@ class LogicSystem(QMainWindow, Ui_MainWindow):
         super(SpeechSystem, self).__init__(parent)
         self.setupUi(self)
         self.pushButton.clicked.connect(self.callTTS)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里注意到Qt的一个特点：当任意一个控件发生内容上的更改时，要记得调用一次其show()方法方能生效。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里注意到Qt的一个特点：当任意一个控件发生内容上的更改时，要记得调用一次其show()方法方能生效。（存疑）&lt;/p&gt;
 &lt;h4 id=&#34;conda虚拟环境管理&#34;&gt;conda虚拟环境管理&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;conda create --name [envname] [python=3.x] # 可以指定环境名称和python版本
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当然这一步是很慢的，如果新机器没有配置过，可以先配置一下清华源再创建环境：&lt;/p&gt;
