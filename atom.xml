@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-01-03T19:14:52&#43;08:00</updated>
+    <updated>2021-01-04T03:39:10&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -244,7 +244,7 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
             <title type="text">Python桌面应用手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pygui/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pygui/</id>
-            <updated>2021-01-03T18:53:53&#43;08:00</updated>
+            <updated>2021-01-04T03:38:53&#43;08:00</updated>
             <published>2020-12-13T21:42:18&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -277,11 +277,48 @@ class LogicSystem(QMainWindow, Ui_MainWindow):
 &lt;pre&gt;&lt;code&gt;conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;pip安装新的库，需要用国内源也是一个道理，不过pip永久设置似乎有点麻烦，干脆命令里面加个参数：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install [package] -i https://pypi.tuna.tsinghua.edu.cn/simple
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下一个工程打包如果需要，可以再换一个环境，由于强迫症驱使，考虑把老的删掉：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;conda remove --name [envname] --all 
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;pyinstaller打包&#34;&gt;PyInstaller打包&lt;/h4&gt;
 &lt;p&gt;踩过n次的万年大坑!&lt;/p&gt;
-</content>
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;摆正心态&lt;/strong&gt;
+PyInstaller打包绝对是个持久战，不是一个命令就能成功的，越大的程序打包越麻烦，你会遇到各种各样意想不到匪夷所思光怪陆离的错误。心态一定不能崩啊......&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;单个文件&lt;/strong&gt;
+直接打包一个.py文件：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;打包为单个exe，简洁但比较慢：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller -F xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;打包为exe和一大堆依赖文件，比较乱但运行快：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller -D xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;去掉exe的命令行窗口：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller -w xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;复杂程序&lt;/strong&gt;：
+先生成spec文件：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;pyi-makespec xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;再根据每次打包后程序报错来修改spec内容。因为是一步一步改的所以千万别把spec文件弄丢了！血的教训！！！
+目前已知问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;librosa缺失&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;datas=[(r&#39;C:\Users\28159\Anaconda3\envs\clean\Lib\site-packages\librosa&#39;, &#39;librosa&#39;)]
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;不易被识别的组件
+scipy有很多小组件都不识别。pygame有时候也不识别。x&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;hiddenimports=[&#39;scipy.spatial.transform._rotation_groups&#39;, &#39;sklearn.utils._weight_vector&#39;, &#39;pygame&#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后根据spec打包：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller xxx.spec
+&lt;/code&gt;&lt;/pre&gt;</content>
             
             
             
