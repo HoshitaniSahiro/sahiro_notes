@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-01-04T03:39:10&#43;08:00</updated>
+    <updated>2021-01-04T04:00:26&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -244,7 +244,7 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
             <title type="text">Python桌面应用手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pygui/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pygui/</id>
-            <updated>2021-01-04T03:38:53&#43;08:00</updated>
+            <updated>2021-01-04T04:00:17&#43;08:00</updated>
             <published>2020-12-13T21:42:18&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -294,12 +294,11 @@ PyInstaller打包绝对是个持久战，不是一个命令就能成功的，越
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;pyinstaller xxx.py
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;打包为单个exe，简洁但比较慢：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;去掉exe的命令行窗口：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pyinstaller -F xxx.py
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;打包为exe和一大堆依赖文件，比较乱但运行快：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pyinstaller -D xxx.py
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;去掉exe的命令行窗口：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pyinstaller -w xxx.py
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;pyinstaller -w xxx.py
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;复杂程序&lt;/strong&gt;：
 先生成spec文件：&lt;/li&gt;
@@ -313,11 +312,11 @@ PyInstaller打包绝对是个持久战，不是一个命令就能成功的，越
 &lt;pre&gt;&lt;code&gt;datas=[(r&#39;C:\Users\28159\Anaconda3\envs\clean\Lib\site-packages\librosa&#39;, &#39;librosa&#39;)]
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;不易被识别的组件
-scipy有很多小组件都不识别。pygame有时候也不识别。x&lt;/li&gt;
+scipy有很多小组件都不识别。pygame有时候也不识别。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;hiddenimports=[&#39;scipy.spatial.transform._rotation_groups&#39;, &#39;sklearn.utils._weight_vector&#39;, &#39;pygame&#39;]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后根据spec打包：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pyinstaller xxx.spec
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后根据spec打包，顺便添加图标：（但添加图标我还没有成功）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pyinstaller -i ./xxx.ico xxx.spec
 &lt;/code&gt;&lt;/pre&gt;</content>
             
             
