@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2020-12-28T02:51:08&#43;08:00</updated>
+    <updated>2021-01-03T19:14:52&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -16,6 +16,87 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
+        <entry>
+            <title type="text">Python音频播放手记</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pyplaymusic/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/pyplaymusic/</id>
+            <updated>2021-01-03T19:13:55&#43;08:00</updated>
+            <published>2021-01-03T18:54:19&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">真的是大坑啊！Python的劣势在这个问……</summary>
+            
+                <content type="html">&lt;p&gt;真的是大坑啊！Python的劣势在这个问题上尽显无疑！做很多事情没有统一而完善的方法，库也不一样，很多库也没有足够完善的维护！&lt;br&gt;
+我真的无力吐槽PySoundFile，至少到2021年1月了，都还不支持numpy数组写入MP3，写入OGG还会出错，真的乌鸡鲅鱼好吧...
+还有Librosa也是怂好吧，自己实现一个完整的IO功能会死？&lt;/p&gt;
+&lt;h3 id=&#34;方法一pyaudio--wave&#34;&gt;方法一：PyAudio + Wave&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import wave as wv
+import pyaudio
+
+wav = wv.open(&amp;quot;xxxxx.wav&amp;quot;, &amp;quot;rb&amp;quot;)
+p = pyaudio.PyAudio()
+stream = p.open(format=p.get_format_from_width(wav.getsampwidth()),
+                channels=wav.getnchannels(),
+                rate=wav.getframerate(),
+                output=True)
+data = wav.readframes(1024)
+while len(data) &amp;gt; 0:
+    stream.write(data)
+    data = wav.readframes(1024)
+stream.stop_stream()
+stream.close()
+p.terminate()
+wav.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;优点：可定制化程度高，可以处理wav&lt;br&gt;
+缺点：单独占用一个线程！复杂处理（如中途停止播放等），需要实现线程间通信！PyAudio初始化有可以感知到的延迟！&lt;/p&gt;
+&lt;h3 id=&#34;方法二qtmultimedia&#34;&gt;方法二：QtMultimedia&lt;/h3&gt;
+&lt;p&gt;QtMultimedia有三个类可以做类似的事情：&lt;br&gt;
+QSound：可以播放wav，但不支持设置position&lt;br&gt;
+QSoundEffect：可以播放wav，但不支持设置position&lt;br&gt;
+QMediaPlayer：可以设置position，但不能播放wav&lt;br&gt;
+我：@#￥&amp;amp;￥#%#@&lt;br&gt;
+代码就不贴了，莫得心情...&lt;/p&gt;
+&lt;h3 id=&#34;方法三pygame&#34;&gt;方法三：PyGame&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;from pygame impotr mixer
+
+mixer.init() # 这一步要初始化采样率和通道之类的
+mixer.music.load(&amp;quot;xxxxx&amp;quot;)
+mixer.music.play() # 传入参数start（秒）可以控制开始播放的时间点
+mixer.music.stop()
+mixer.music.unload()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;看起来简单粗暴对不对！是，它一切都好，但是，但是，Wav还是不支持传入参数start，真的把我坑惨了。&lt;/p&gt;
+&lt;h3 id=&#34;究竟怎么办呢&#34;&gt;究竟怎么办呢&lt;/h3&gt;
+&lt;p&gt;简单的需求其实三种方法都不是不能用（但其实PyGame最方便也最快），但是要处理稍微复杂一些的，比如音频来自PySoundFile（相当于已经限制了格式是wav）、要求低延迟、可设置音频开始位置，我现在只有一种十分丑陋的方法：&lt;/p&gt;
+&lt;p&gt;每次改变音频开始位置的时候，把音频numpy数组索引一遍，重新用soundfile.write保存一个临时文件，再用PyGame方法播放。&lt;/p&gt;
+&lt;p&gt;也不知道该骂PySoundFile还是该骂PyGame还是该骂PyQt还是该骂LibRosa，反正都是功能不全的辣鸡东西，当然也可能是我太笨。&lt;br&gt;
+我好暴躁.jpg  我一下午就浪费在星巴克搞这个鬼了...&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">行路难</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20201228/" />
@@ -163,7 +244,7 @@ src=&#34;../../images/20201213.jfif&#34;&gt;
             <title type="text">Python桌面应用手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pygui/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pygui/</id>
-            <updated>2020-12-28T02:17:04&#43;08:00</updated>
+            <updated>2021-01-03T18:53:53&#43;08:00</updated>
             <published>2020-12-13T21:42:18&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -199,7 +280,7 @@ conda config --set show_channel_urls yes
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下一个工程打包如果需要，可以再换一个环境，由于强迫症驱使，考虑把老的删掉：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;conda remove --name [envname] --all 
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;pyinstaller打包&#34;&gt;PyInstaller打包&lt;/h4&gt;
-&lt;p&gt;踩过n次的万年大坑，下次一定补.jpg&lt;/p&gt;
+&lt;p&gt;踩过n次的万年大坑!&lt;/p&gt;
 </content>
             
             
