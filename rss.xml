@@ -21,10 +21,52 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Sat, 23 Jan 2021 21:19:38 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 19 Feb 2021 20:51:08 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
+        
+            <item>
+                <title>初七</title>
+                <link>http://www.boa-sahiro.one/sahiro_notes/post/20210219/</link>
+                <guid isPermaLink="true">http://www.boa-sahiro.one/sahiro_notes/post/20210219/</guid>
+                <pubDate>Fri, 19 Feb 2021 20:45:23 &#43;0800</pubDate>
+                
+                    <author>wu_yuxuan201@outlook.com (Sahiro)</author>
+                
+                
+                
+                    <description>&lt;p&gt;&lt;image
+src=&#34;../../images/20210219.jfif&#34;&gt;
+&lt;/image&gt;
+打败回忆最有效的方法，就是祭出一个更久远的来挤走它。&lt;br&gt;
+潜意识里，我总觉得所有事情都是不会变的。头发短时，习惯了看人们在眼前来了又去，去了又来，轻松得如同散步，好像遛个弯就一定会回来。有些不怎么见面的人很少回来，想必等到头发能拧成辫儿了也总会再见，却不知世事难料。等草地褪成沙石，春风过后也不再发芽生长，方知南来北往，东去西归，人们其实很少停留。&lt;br&gt;
+翻照片一路下来，又看到了小时候被按在水里洗澡的盆，惊而发现自己还记得那热水拢成圆形的触感，和宝宝金水的微微呛人的味道。我其实也没活多久，怎么总是落得一身老气。鼠年新年siri送我的“启”字，简直是准得不能再准。户字底下一张嘴，有些人不知道窝在家消耗了国家多少粮食，才勉强冒了点从0到1的变化。&lt;br&gt;
+牛年到了，要记得比以前多拍点照片呀。小的时候脑子抽了要扮牛，非要跑去草地里趴下来吃草，喜羊羊说的绿草，香的味道嘛是一点没有，还立马被打回人形挨了一顿骂。不过大概心诚则灵，那片草地再被我啃过一口之后，还真的奇迹般的慢慢就秃了，说明今年大概是会心想事成的吧。&lt;br&gt;
+我也不贪，唯望船能上岸，菜能上桌，人间有的是烟火。&lt;/p&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://www.boa-sahiro.one/sahiro_notes/post/">post\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Python音频播放手记</title>
@@ -678,7 +720,9 @@ scp -r [source address] user@ip:[target address]    # scp传文件夹
                 
                     <description>&lt;p&gt;不知道别人怎么样，反正我是越来越嫌弃docx格式的文档编辑了，大概人是越来越懒的吧。写轻量级文档主要用markdown了，论文就用latex。其中latex语法有一点多哈。&lt;/p&gt;
 &lt;h3 id=&#34;基本文字符号&#34;&gt;基本文字符号&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;\overline{} # 上横线
+&lt;pre&gt;&lt;code&gt;\textbf{} # 加粗
+\textit{} # 斜体
+\overline{} # 上横线
 \underline{}    #下横线
 \hat{}  # 小帽子
 \widehat{}  # 弯帽子
@@ -703,14 +747,14 @@ _{} ^{} # 下标、上标
 \&amp;amp;    &amp;amp;
 \%    %
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;参考文献格式&#34;&gt;参考文献格式&lt;/h3&gt;
-&lt;p&gt;\bibliographystyle{}
-plain，按字母的顺序排列，比较次序为作者、年度和标题.
-unsrt，样式同plain，只是按照引用的先后排序.
-alpha，用作者名首字母+年份后两位作标号，以字母顺序排序.
-abbrv，类似plain，将月份全拼改为缩写，更显紧凑.
-ieeetr，国际电气电子工程师协会期刊样式.
-acm，美国计算机学会期刊样式.
-siam，美国工业和应用数学学会期刊样式.
+&lt;p&gt;\bibliographystyle{}&lt;br&gt;
+plain，按字母的顺序排列，比较次序为作者、年度和标题.&lt;br&gt;
+unsrt，样式同plain，只是按照引用的先后排序.&lt;br&gt;
+alpha，用作者名首字母+年份后两位作标号，以字母顺序排序.&lt;br&gt;
+abbrv，类似plain，将月份全拼改为缩写，更显紧凑.&lt;br&gt;
+ieeetr，国际电气电子工程师协会期刊样式.&lt;br&gt;
+acm，美国计算机学会期刊样式.&lt;br&gt;
+siam，美国工业和应用数学学会期刊样式.&lt;br&gt;
 apalike，美国心理学学会期刊样式.&lt;/p&gt;
 </description>
                 
@@ -961,7 +1005,8 @@ watch:                      true
 &lt;p&gt;目前只会用到Github，就只写Github相关的命令吧。&lt;/p&gt;
 &lt;h3 id=&#34;从github得到仓库&#34;&gt;从Github得到仓库&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;git clone git@github.com:HoshitaniSahiro/sahiro_notes.git
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;强迫症患者注意，此操作会在路径中新建一整个文件夹！&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;强迫症患者注意，此操作会在路径中新建一整个文件夹！
+加入参数-b [branch]可以指定分支。&lt;/p&gt;
 &lt;h3 id=&#34;查看远程仓库地址&#34;&gt;查看远程仓库地址&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;git remote -v
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;在本地建立仓库并push到github&#34;&gt;在本地建立仓库并push到Github&lt;/h3&gt;
