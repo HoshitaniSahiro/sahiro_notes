@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-02-19T20:55:09&#43;08:00</updated>
+    <updated>2021-03-30T02:41:06&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -16,6 +16,59 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
+        <entry>
+            <title type="text">上海三月</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210330/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/20210330/</id>
+            <updated>2021-03-30T02:40:18&#43;08:00</updated>
+            <published>2021-03-30T00:51:05&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">甜甜梅茶醉，悠悠春雨喂。 上海在几场淅淅沥……</summary>
+            
+                <content type="html">&lt;p&gt;甜甜梅茶醉，悠悠春雨喂。&lt;br&gt;
+上海在几场淅淅沥沥的春雨后，一下子温度突变，街上甚至出现了花花绿绿的短袖。终于可以收起厚被子，而把电脑光明正大地放在没盖被子的大腿上了（烫烫烫）。&lt;br&gt;
+这个三月产生的感慨之多，足够我出一本书。每天情绪如同过山车，七上八下，好不刺激。离最后的结果越来越近了，从最初的怀疑人生想重开，到如今能些许坦然接受、拥抱变化，感叹世事难料的同时，眼前的这一切也驱使着我深度思考，那些从来没有思考过的问题。&lt;br&gt;
+上高中的目标是考大学，上大学的目标是读研，那么然后呢？读博？再然后呢？&lt;br&gt;
+读书是为了什么？能多大程度达到这个目的？&lt;br&gt;
+起初提出这些问题时，大脑的每一个细胞都哑然。至今它们仍是在激烈讨论，拿不出一个明确的结论。但这至少说明了，这些是值得讨论的问题。&lt;br&gt;
+之前有听过一个说法：“如果你不知道该怎么办了，就去考研吧。”说句不好听的话，这个国度里的绝大多数大学生，即便是没有二战的，都或多或少抱有类似的想法，因为这是看起来永远不会错的一条路，不仅可以让人够到更多的门槛，还有一个最大的好处，就是可以延后做出选择的时间。那些很难思考的问题，可以暂时先不用思考。既然还是学生时代的延续，这一阶段也没有什么压力。每次开组会的时候看到有的研究生讲自己在做的项目的时候懵逼而茫然的眼神，我想他们大抵没怎么思考这些。怎么写完论文才是更关键的问题不是吗。&lt;br&gt;
+后来他们毕业了。他们中的很多，发现曾经能进去的大厂现在进不去了，曾经想要的教职现在读了博士也够不上了。没辙。
+读研当然是正确的，但也是危险的。读本科也是一样。正确是明显的，在于学识的提升和平台的提高，而危险是隐蔽的，学校真的真的是个象牙塔。在我来实习之前，我也闻不到空气中危险的味道，但其实它无处不在。&lt;br&gt;
+我挺反感“职场”这个词，但不可否认的是，绝大多数人的生命中都有一个“职场”。个体在其中为社会创造价值，社会反馈以物质条件和地位。而有人的地方才是社会。无论是读博出来找教职、凭学历考公还是进大厂小厂或者创业，其实都是“职场”，意即很难脱离人与人之间的关系。人与人之间需要沟通、协商、需要博弈，获得的财富需要管理、需要经营，这其实都是很重要的课题，而习惯了刷题的大学生们很容易有意或无意地忽视它们的意义：“万般皆下品，唯有读书高。”陷入误区的做题家们就会很容易感慨：“我都做题做到这个份上了，为什么还是没什么用？”有用就怪了呀，做得一手好题只能给学校创造价值。&lt;br&gt;
+遂深感终身学习的必要性。一个健全和完备的技能点分布模型，应当如同正态分布的曲线：在专注领域应有扎实的基础和丰富的经验，与此同时也要有宽阔的知识广度。前者用来突围进攻，后者用来筑墙积粮。音乐能力和IT技术的兼修是必须的，上好的兵器也需要持续的打磨才能成就十八般武艺。心理学、哲学、经济学、法学、文学、数学，都是大补的食粮，建议持续增加储备。同时，终身学习也将是一件很享受的事儿，因为学习本来就不等同于做题嘛。天上有星星月亮，地下有化石和岩浆，东边有日出，西边有佛祖，北边有雪兔，南边有袋鼠。这个世界很奇妙，我是它的一部分，我也很奇妙。奇妙的我也很喜欢世界的奇妙。我想，我曾经很熟悉这种感受，直到几何和公式挤走了“学习”二字其他的意义。读万卷书行万里路，这样一句简单枯燥的格言，此时的味道竟然有些新鲜。&lt;br&gt;
+&lt;image
+src=&#34;../../images/20210330.jfif&#34;&gt;
+&lt;/image&gt;
+进入辛丑年来，我发觉自己不再像之前那样，认为未来还有很长的路要走了，反而是任尚重而道不远。危机四伏，时间是紧迫的。来字节之后才知道，提高效率对于现代人是有多么重要，（我我我绝对没有影射那些乱七八糟的会，我我我是在夸飞书云文档.jpg）因此很有必要用类似OKR的方法管理个人成长规划中可控的部分，而双月的周期也是较为合适的。凡事就怕一个拖，请务必做好可行性管理和重要程度排序，确保一切有序执行。（认真脸）
+三月骤然入夏，方知上海春的短暂，让那花抓紧时间开吧，否则游人可都散了。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">初七</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210219/" />
@@ -444,7 +497,7 @@ scipy有很多小组件都不识别。pygame有时候也不识别。&lt;/li&gt;
             <title type="text">Python文件处理手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/pyfile/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/pyfile/</id>
-            <updated>2020-11-30T23:01:58&#43;08:00</updated>
+            <updated>2021-02-22T21:03:01&#43;08:00</updated>
             <published>2020-11-30T18:39:57&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -463,7 +516,7 @@ scipy有很多小组件都不识别。pygame有时候也不识别。&lt;/li&gt;
         os.rmdir(os.path.join(root, name))
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;获取文件夹下所有文件&#34;&gt;获取文件夹下所有文件&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;filenames = os.listdir(directory) # 获得文件名
-for filename in filenames
+for filename in filenames:
     filepath = os.path.join(directory, filename) # 获得路径
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;从路径得到文件名&#34;&gt;从路径得到文件名&lt;/h3&gt;
 &lt;p&gt;filename = os.path.basename(filepath)&lt;/p&gt;
@@ -886,7 +939,7 @@ s.keep_alive =False
             <title type="text">Hugo手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/hugo/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/hugo/</id>
-            <updated>2021-01-24T22:25:14&#43;08:00</updated>
+            <updated>2021-02-22T21:02:51&#43;08:00</updated>
             <published>2020-11-25T15:46:36&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
