@@ -10,7 +10,7 @@
         <title>纱寻·手记</title>
         <link>http://www.boa-sahiro.one/sahiro_notes/</link>
         <description>纱寻在这里写些东西～。</description>
-        <generator>Hugo 0.74.3 https://gohugo.io/</generator>
+        <generator>Hugo 0.82.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -21,7 +21,7 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Tue, 30 Mar 2021 02:44:54 &#43;0800</lastBuildDate>
+        <lastBuildDate>Mon, 12 Apr 2021 01:30:30 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
@@ -1073,7 +1073,9 @@ git push -f origin master
 git pull –-rebase origin maste
 git push origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;--rebase在合并代码的时候其作用就是在一个随机创建的分支上处理冲突，避免了直接污染原来的分区。&lt;/p&gt;
-</description>
+&lt;p&gt;如果出现SSL错误：“fatal: unable to access &#39;https://github.com/HoshitaniSahiro/sahiro_note_src.git/&#39;: Failed to connect to github.com port 443: Timed out”则可能是因为使用VPN登陆过Github。在终端输入命令更新DNS设置：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ipconfig /flushdns
+&lt;/code&gt;&lt;/pre&gt;</description>
                 
                 
                 

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-03-30T02:44:53&#43;08:00</updated>
+    <updated>2021-04-12T01:30:30&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -15,7 +15,7 @@
                 <email>wu_yuxuan201@outlook.com</email>
             </author>
     
-    <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.82.0">Hugo</generator>
         <entry>
             <title type="text">上海三月</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210330/" />
@@ -1083,7 +1083,7 @@ watch:                      true
             <title type="text">Git手记</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/git/" />
             <id>http://www.boa-sahiro.one/sahiro_notes/post/git/</id>
-            <updated>2021-02-19T20:45:03&#43;08:00</updated>
+            <updated>2021-03-30T02:53:13&#43;08:00</updated>
             <published>2020-11-25T15:39:51&#43;08:00</published>
             <author>
                     <name>Sahiro</name>
@@ -1114,7 +1114,9 @@ git push -f origin master
 git pull –-rebase origin maste
 git push origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;--rebase在合并代码的时候其作用就是在一个随机创建的分支上处理冲突，避免了直接污染原来的分区。&lt;/p&gt;
-</content>
+&lt;p&gt;如果出现SSL错误：“fatal: unable to access &#39;https://github.com/HoshitaniSahiro/sahiro_note_src.git/&#39;: Failed to connect to github.com port 443: Timed out”则可能是因为使用VPN登陆过Github。在终端输入命令更新DNS设置：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ipconfig /flushdns
+&lt;/code&gt;&lt;/pre&gt;</content>
             
             
             
