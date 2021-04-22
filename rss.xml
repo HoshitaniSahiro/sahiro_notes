@@ -21,7 +21,7 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Mon, 12 Apr 2021 01:30:30 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 23 Apr 2021 01:20:06 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
@@ -491,6 +491,14 @@ scipy有很多小组件都不识别。pygame有时候也不识别。&lt;/li&gt;
                 
                     <description>&lt;p&gt;这也是一个经常忘记、每次都要去查的点，但其实真的每次都一模一样...&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import os
+import sys
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;获取当前工作路径&#34;&gt;获取当前工作路径&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;os.getcwd()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;获取当前文件路径和上一个记得区分&#34;&gt;获取当前文件路径（和上一个记得区分）&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;os.path.abspath(__ file __)
+sys.argv[0]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;获取当前文件位置上一个去掉文件名&#34;&gt;获取当前文件位置（上一个去掉文件名）&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sys.path[0]
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;清空文件夹&#34;&gt;清空文件夹&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;for root, dirs, files in os.walk(directory, topdown=False):
     for name in files:
@@ -502,8 +510,8 @@ scipy有很多小组件都不识别。pygame有时候也不识别。&lt;/li&gt;
 for filename in filenames:
     filepath = os.path.join(directory, filename) # 获得路径
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;从路径得到文件名&#34;&gt;从路径得到文件名&lt;/h3&gt;
-&lt;p&gt;filename = os.path.basename(filepath)&lt;/p&gt;
-</description>
+&lt;pre&gt;&lt;code&gt;filename = os.path.basename(filepath)
+&lt;/code&gt;&lt;/pre&gt;</description>
                 
                 
                 
@@ -707,7 +715,7 @@ rmdir xxx   # 删除，仅限空文件夹
 rm xxx  # 删除文件
 rm -i xxx   # 删除前逐一询问确认。
 rm -f xxx   # 即使原档案属性设为唯读，亦直接删除，无需逐一确认
-rm -r xxx   # 删除文件夹
+rm -r xxx   # 删除文件夹，这个用的大概比较多
 rm -r * # 清空当前目录
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。&lt;/p&gt;
 &lt;h3 id=&#34;进程&#34;&gt;进程&lt;/h3&gt;
@@ -734,6 +742,15 @@ python -m visdom.server 开启pytorch visdom服务
 &lt;pre&gt;&lt;code&gt;scp [source address] user@ip:[target address]    # scp传单文件
 scp -r [source address] user@ip:[target address]    # scp传文件夹
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;从服务器传输文件到本地时交换上面两个地址即可，本地address是不用填ip的。&lt;/p&gt;
+&lt;h3 id=&#34;建立http服务器打开端口&#34;&gt;建立Http服务器，打开端口&lt;/h3&gt;
+&lt;p&gt;Python在路径下输入：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python -m SimpleHTTPServer 8000
+python -m http.server 8000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中8000为端口号。建立好Http Server后可以从浏览器通过ip:port访问文件（夺么方便）
+-m的意思是把一个模块当脚本来运行。&lt;/p&gt;
+&lt;h3 id=&#34;解决vscode无法连接到wsl的问题我连不上我自己系列&#34;&gt;解决VSCode无法连接到WSL的问题（我连不上我自己系列）&lt;/h3&gt;
+&lt;p&gt;这个算是巨硬的小bug，其实和linux关系不大哈，但总要找个地方写一下！&lt;br&gt;
+解决方法很简单也很傻，在~把.vscode-server文件夹删掉就好了。&lt;/p&gt;
 </description>
                 
                 
@@ -831,7 +848,7 @@ apalike，美国心理学学会期刊样式.&lt;/p&gt;
             </item>
         
             <item>
-                <title>Crawler手记</title>
+                <title>爬虫手记</title>
                 <link>http://www.boa-sahiro.one/sahiro_notes/post/crawler/</link>
                 <guid isPermaLink="true">http://www.boa-sahiro.one/sahiro_notes/post/crawler/</guid>
                 <pubDate>Thu, 26 Nov 2020 12:01:41 &#43;0800</pubDate>
