@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-04-23T01:40:04&#43;08:00</updated>
+    <updated>2021-04-23T01:41:58&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -16,6 +16,51 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.82.0">Hugo</generator>
+        <entry>
+            <title type="text">复乐园</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210422/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/20210422/</id>
+            <updated>2021-04-23T01:41:54&#43;08:00</updated>
+            <published>2021-04-22T00:51:05&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">非常惊喜地，在四月十三这天，计算机神校C……</summary>
+            
+                <content type="html">&lt;p&gt;非常惊喜地，在四月十三这天，计算机神校CMU给了我垂青，并且两年的学费给我Cover掉了一半。这可以说是除了C4DM+CSC之外最香的选择，大概也是综合来看最好的选择。&lt;/p&gt;
+&lt;p&gt;写这篇文章的时候，离收到Offer的邮件已经有一周多了。我仍然十分清晰地记得收到邮件的那一秒是如何为自己成功强装镇定而沾沾自喜，随后又是如何藏不住内心地狂喜，只好用枕头遮住脸假装害羞的样子。有关拿到这份Offer之前那一个月无助迷茫的日子，现在却感受没那么清晰了。捶胸顿足和委曲求全的酸楚在逐渐模糊，像品尝葡萄酒的时候，香甜很快会覆盖酸涩。&lt;/p&gt;
+&lt;p&gt;不过，良药苦口嘛，这段时间里反复的自我舔舐也催使着我认清形势。我们究竟是在打怎样一场仗、下怎样一场棋？或者去怎样的一场旅行，到商场挑些什么商品？人是比人的想象还复杂的动物，真可谓各有各的活法。高中班上第一名和最后一名，居然都和我在同一个学校，但每个人的活法却又不同。你可以搞学术也可以做生意，也可以躺平肥宅。追求的是钱、权、影响力、社会地位还是多巴胺，都无所谓。“其实都算是有理想，都算废寝食忘。”&lt;/p&gt;
+&lt;p&gt;我相信各种各样的活法还是有共同点的，那就是追求快乐。上帝给了每个人一张人间体验卡，每个人只需要挑选自己喜爱的游乐项目，就可以玩得很开心了。只不过有些项目门可罗雀，有些项目门庭若市......排长队的经常揶揄那些玩不排队的项目的。傻不傻呀，好不容易来这么一趟就玩这么点东西。玩不排队的项目的也偶尔窃喜。累不累啊，来了这儿还要排队让自己受罪。也没什么好或者不好的，整个游乐园也不过一场盛大的击鼓传花。&lt;/p&gt;
+&lt;p&gt;我不想抱着如此消极厌世的心态面对接下来的————战场、棋局、旅行或者抢购。如果打仗就要像拿破仑，下棋就要是吴清源。旅行就要去天涯海角，逛吃买就得享尽饕餮。那么多项目，玩什么都比不玩要好。春风得意马蹄疾，一日看尽长安花。游人如织，不可以停下脚步。&lt;/p&gt;
+&lt;p&gt;&lt;image
+src=&#34;../../images/20210422.jfif&#34;&gt;
+&lt;/image&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">上海三月</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210330/" />
@@ -45,51 +90,6 @@ src=&#34;../../images/20210330.jfif&#34;&gt;
 &lt;/image&gt;
 进入辛丑年来，我发觉自己不再像之前那样，认为未来还有很长的路要走了，反而是任尚重而道不远。危机四伏，时间是紧迫的。来字节之后才知道，提高效率对于现代人是有多么重要，（我我我绝对没有影射那些乱七八糟的会，我我我是在夸飞书云文档.jpg）因此很有必要用类似OKR的方法管理个人成长规划中可控的部分，而双月的周期也是较为合适的。凡事就怕一个拖，请务必做好可行性管理和重要程度排序，确保一切有序执行。（认真脸）&lt;/p&gt;
 &lt;p&gt;三月骤然入夏，方知上海春的短暂，让那花抓紧时间开吧，否则游人可都散了。&lt;/p&gt;
-</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                        
-                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
-                        
-                    
-                
-            
-            
-            
-                
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">复乐园</title>
-            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/20210422/" />
-            <id>http://www.boa-sahiro.one/sahiro_notes/post/20210422/</id>
-            <updated>2021-04-23T01:40:01&#43;08:00</updated>
-            <published>2021-03-30T00:51:05&#43;08:00</published>
-            <author>
-                    <name>Sahiro</name>
-                    <uri>https://www.boa-sahiro.one</uri>
-                    <email>wu_yuxuan201@outlook.com</email>
-                    </author>
-            <summary type="html">非常惊喜地，在四月十三这天，计算机神校C……</summary>
-            
-                <content type="html">&lt;p&gt;非常惊喜地，在四月十三这天，计算机神校CMU给了我垂青，并且两年的学费给我Cover掉了一半。这可以说是除了C4DM+CSC之外最香的选择，大概也是综合来看最好的选择。&lt;/p&gt;
-&lt;p&gt;写这篇文章的时候，离收到Offer的邮件已经有一周多了。我仍然十分清晰地记得收到邮件的那一秒是如何为自己成功强装镇定而沾沾自喜，随后又是如何藏不住内心地狂喜，只好用枕头遮住脸假装害羞的样子。有关拿到这份Offer之前那一个月无助迷茫的日子，现在却感受没那么清晰了。捶胸顿足和委曲求全的酸楚在逐渐模糊，像品尝葡萄酒的时候，香甜很快会覆盖酸涩。&lt;/p&gt;
-&lt;p&gt;不过，良药苦口嘛，这段时间里反复的自我舔舐也催使着我认清形势。我们究竟是在打怎样一场仗、下怎样一场棋？或者去怎样的一场旅行，到商场挑些什么商品？人是比人的想象还复杂的动物，真可谓各有各的活法。高中班上第一名和最后一名，居然都和我在同一个学校，但每个人的活法却又不同。你可以搞学术也可以做生意，也可以躺平肥宅。追求的是钱、权、影响力、社会地位还是多巴胺，都无所谓。“其实都算是有理想，都算废寝食忘。”&lt;/p&gt;
-&lt;p&gt;我相信各种各样的活法还是有共同点的，那就是追求快乐。上帝给了每个人一张人间体验卡，每个人只需要挑选自己喜爱的游乐项目，就可以玩得很开心了。只不过有些项目门可罗雀，有些项目门庭若市......排长队的经常揶揄那些玩不排队的项目的。傻不傻呀，好不容易来这么一趟就玩这么点东西。玩不排队的项目的也偶尔窃喜。累不累啊，来了这儿还要排队让自己受罪。也没什么好或者不好的，整个游乐园也不过一场盛大的击鼓传花。&lt;/p&gt;
-&lt;p&gt;我不想抱着如此消极厌世的心态面对接下来的————战场、棋局、旅行或者抢购。如果打仗就要像拿破仑，下棋就要是吴清源。旅行就要去天涯海角，逛吃买就得享尽饕餮。那么多项目，玩什么都比不玩要好。春风得意马蹄疾，一日看尽长安花。游人如织，不可以停下脚步。&lt;/p&gt;
-&lt;p&gt;&lt;image
-src=&#34;../../images/20210422.jfif&#34;&gt;
-&lt;/image&gt;&lt;/p&gt;
 </content>
             
             
