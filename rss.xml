@@ -21,7 +21,7 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Fri, 23 Apr 2021 01:41:58 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 24 Apr 2021 15:56:18 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
@@ -760,7 +760,31 @@ rm -f xxx   # 即使原档案属性设为唯读，亦直接删除，无需逐一
 rm -r xxx   # 删除文件夹，这个用的大概比较多
 rm -r * # 清空当前目录
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。&lt;/p&gt;
-&lt;h3 id=&#34;进程&#34;&gt;进程&lt;/h3&gt;
+&lt;h3 id=&#34;文件权限管理&#34;&gt;文件权限管理&lt;/h3&gt;
+&lt;p&gt;真的不要每次都去查了啦！查自己不好嘛&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod [who, operator, permission] file
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;who:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;u(user): 文件所有者&lt;/li&gt;
+&lt;li&gt;g(group): 文件所有者所在组&lt;/li&gt;
+&lt;li&gt;o(others): 所有其他用户&lt;/li&gt;
+&lt;li&gt;a(all): 所用用户, 相当于ugo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;operator:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;+: 增加权限&lt;/li&gt;
+&lt;li&gt;-: 减少权限&lt;/li&gt;
+&lt;li&gt;=: 设置权限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;permission:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;r: 可读&lt;/li&gt;
+&lt;li&gt;w: 可写&lt;/li&gt;
+&lt;li&gt;x: 可执行
+八进制表示法：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;chmod 777 file （所有人可读可写可执行）
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;进程&#34;&gt;进程&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;ps a    # 显示现行终端机下的所有程序，包括其他用户的程序。
 ps -A   # 显示所有程序。
 sudo kill xxx # 结束进程
