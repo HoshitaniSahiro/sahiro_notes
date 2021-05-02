@@ -21,10 +21,67 @@
             <webMaster>wu_yuxuan201@outlook.com (Sahiro)</webMaster>
         
         
-        <lastBuildDate>Sat, 24 Apr 2021 15:56:18 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 02 May 2021 09:44:07 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/rss.xml" />
         
+        
+            <item>
+                <title>Visdom——远程可视化工具</title>
+                <link>http://www.boa-sahiro.one/sahiro_notes/post/visdom/</link>
+                <guid isPermaLink="true">http://www.boa-sahiro.one/sahiro_notes/post/visdom/</guid>
+                <pubDate>Sat, 01 May 2021 17:10:24 &#43;0800</pubDate>
+                
+                    <author>wu_yuxuan201@outlook.com (Sahiro)</author>
+                
+                
+                
+                    <description>&lt;p&gt;随着个人日常使用和开发渐渐解耦、一般开发转向WSL，数据的可视化就成了一个问题。纯Matplotlib在这种场景下不顶用了，于是目光转向了炼丹的时候的老朋友visdom。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以下很多都摘自知乎专栏https://zhuanlan.zhihu.com/p/32025746&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from visdom import Visdom
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;visdom大多数函数接口可以输入一个tensor(保存数据），和一个可选的tensor Y（标签或者时间戳）, 另外都可以指定窗口win,和汇出图添加到哪个env上，另外options输入可以修改默认的绘图属性，输入参数基于表中键的匹配，有一些通用的options可以选择,下面列出了通用的可视化options(除了plot.image和plot.text外）&lt;/p&gt;
+&lt;h3 id=&#34;启动服务&#34;&gt;启动服务&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;python -m visdom.server
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;使用visdom显示matplotlib图像&#34;&gt;使用visdom显示matplotlib图像&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import matplotlib.pyplot as plt
+viz = Visdom()
+viz.matplot(plt)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;（好像写完这个接下来也没什么需要写的了233333&lt;/p&gt;
+&lt;p&gt;（算了还是写一下吧&lt;/p&gt;
+&lt;h3 id=&#34;使用visdom显示图片&#34;&gt;使用visdom显示图片&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 单张
+viz.image(
+    np.random.rand(3, 512, 256),
+    opts=dict(title=&#39;Random!&#39;, caption=&#39;How random.&#39;),
+)
+# 多张
+viz.images(
+    np.random.randn(20, 3, 64, 64),
+    opts=dict(title=&#39;Random images&#39;, caption=&#39;How random.&#39;)
+)
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://www.boa-sahiro.one/sahiro_notes/post/">post\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>复乐园</title>
@@ -288,11 +345,13 @@ mixer.music.unload()
                 
                     <description>&lt;p&gt;非常非常讨厌的、也用了很多很多次的Matplotlib......然鹅你我别无选择。&lt;/p&gt;
 &lt;h4 id=&#34;matplotlib-绘图基本方法&#34;&gt;Matplotlib 绘图基本方法&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;from matplotlib.figure import Figure
+&lt;pre&gt;&lt;code&gt;import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 
-figure = Figure(figsize=(width, height)) # 创建Figure对象
-figure.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0.1, wspace=0.1) # 去掉大边框
-figure1 = self.figure.add_subplot(111) # 创建子图，&amp;quot;111&amp;quot;代表一共有一行一列，当前的是第一个
+
+figure = plt.figure(figsize=(width, height)) # 创建Figure对象，脱离GUI框架（如PyQt）单独画图的时候要用pyplot
+figure.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0.1, wspace=0.1) # 去掉大边框（但可能会连刻度一起去掉）
+figure1 = figure.add_subplot(111) # 创建子图，&amp;quot;111&amp;quot;代表一共有一行一列，当前的是第一个
 figure1.axis(&amp;quot;off&amp;quot;) # 去掉坐标轴
 figure1.plot(x, y, color=&#39;indigo&#39;) # 可以填入好看的颜色耶
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;matplotlib-颜色字典&#34;&gt;Matplotlib 颜色字典&lt;/h4&gt;
@@ -553,6 +612,10 @@ for filename in filenames:
     filepath = os.path.join(directory, filename) # 获得路径
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;从路径得到文件名&#34;&gt;从路径得到文件名&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;filename = os.path.basename(filepath)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;获取当前时间&#34;&gt;获取当前时间&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import time
+hour = time.localtime().tm_hour
+min = time.localtime().tm_min
 &lt;/code&gt;&lt;/pre&gt;</description>
                 
                 
