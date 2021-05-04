@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">纱寻·手记</title>
     <subtitle type="html">纱寻在这里写些东西～。</subtitle>
-    <updated>2021-05-02T09:44:07&#43;08:00</updated>
+    <updated>2021-05-04T18:46:53&#43;08:00</updated>
     <id>http://www.boa-sahiro.one/sahiro_notes/</id>
     <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/" />
     <link rel="self" type="application/atom&#43;xml" href="http://www.boa-sahiro.one/sahiro_notes/atom.xml" />
@@ -16,6 +16,61 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.82.0">Hugo</generator>
+        <entry>
+            <title type="text">隐马尔可夫模型简介</title>
+            <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/markov/" />
+            <id>http://www.boa-sahiro.one/sahiro_notes/post/markov/</id>
+            <updated>2021-05-04T18:46:15&#43;08:00</updated>
+            <published>2021-05-04T18:22:00&#43;08:00</published>
+            <author>
+                    <name>Sahiro</name>
+                    <uri>https://www.boa-sahiro.one</uri>
+                    <email>wu_yuxuan201@outlook.com</email>
+                    </author>
+            <summary type="html">马尔可夫过程 https://zhuanlan.zhihu.com/p/86995916 马尔可夫过程的大概意思就是……</summary>
+            
+                <content type="html">&lt;h3 id=&#34;马尔可夫过程&#34;&gt;马尔可夫过程&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/86995916&#34;&gt;https://zhuanlan.zhihu.com/p/86995916&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;马尔可夫过程的大概意思就是未来只与现在有关，与过去无关。&lt;br&gt;
+这种“下一时刻的状态至于当前状态有关，与上一时刻状态无关”的性质，称为无后效性或者马尔可夫性。而具有这种性质的过程就称为马尔可夫过程。&lt;br&gt;
+1-阶马尔科夫链：状态、初始向量、状态转移矩阵&lt;br&gt;
+n-阶马尔可夫链拥有n阶的记忆性，可视为马尔可夫链的推广。传统的马尔可夫链可以认为是1-阶马尔可夫链。由马尔可夫性质可得，将多个马尔可夫链作为组元可以得到n-阶的马尔可夫链。&lt;/p&gt;
+&lt;h3 id=&#34;隐马尔可夫模型&#34;&gt;隐马尔可夫模型&lt;/h3&gt;
+&lt;p&gt;隐马尔可夫模型（Hidden Markov Model，HMM）是统计模型，它用来描述一个含有隐含未知参数的马尔可夫过程。其难点是从可观察的参数中确定该过程的隐含参数。然后利用这些参数来作进一步的分析，例如模式识别。在隐马尔可夫模型中，不仅仅有一串可见状态链，还有一串隐含状态链。&lt;br&gt;
+用它处理的问题一般有两个特征：&lt;br&gt;
+ 第一：问题是基于序列的，比如时间序列，或者状态序列。&lt;br&gt;
+ 第二：问题中有两类数据，一类序列数据是可以观测到的，即观测序列；而另一类数据是不能观测到的，即隐藏状态序列，简称状态序列，该序列是马尔可夫链，由于该链不能直观观测，所以叫“隐”马尔可夫模型。&lt;br&gt;
+ 简单地说，状态序列前项能算出后项，但观测不到，观测序列前项算不出后项，但能观测到，观测序列可由状态序列算出。&lt;/p&gt;
+&lt;p&gt;典型问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;已知模型参数，计算某一给定可观察状态序列的概率&lt;/li&gt;
+&lt;li&gt;根据可观察状态的序列找到一个最可能的隐藏状态序列&lt;/li&gt;
+&lt;li&gt;根据观察到的序列集来找到一个最有可能的 HMM&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://www.boa-sahiro.one/sahiro_notes/post/" term="post\" label="post\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Visdom——远程可视化工具</title>
             <link rel="alternate" type="text/html" href="http://www.boa-sahiro.one/sahiro_notes/post/visdom/" />
